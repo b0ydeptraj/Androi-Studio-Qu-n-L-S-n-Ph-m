@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_QLSP"
+        android:text="Quản lý sản phẩm"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gline_doc"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_masp"
+        android:text="Mã sp:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_QLSP"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_masp"
+        android:hint="Nhập mã SP"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_QLSP"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_tensp"
+        android:text="Họ tên SP:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_masp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_tensp"
+        android:hint="Nhập tên SP"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_masp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_loaisp"
+        android:text="Loại sản phẩm:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tensp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_loaisp"
+        android:hint="Nhập Loại Sản Phẩm"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tensp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_soluong"
+        android:text="Số Lượng:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loaisp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_soluong"
+        android:hint="Nhập Số Lượng"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loaisp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_dongia"
+        android:text="Đơn  Giá:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_soluong"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_dongia"
+        android:hint="Nhập Đơn  Giá"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_soluong"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_Them"
+        android:text="Thêm"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_Sua"
+        android:text="Sửa"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_Them"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_Xoa"
+        android:text="Xóa"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_Sua"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_Thoat"
+        android:text="Thoát"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_Xoa"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/lv_sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
